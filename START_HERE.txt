@@ -1,0 +1,19 @@
+ANN TRANSMISSION-LINE FAULT PROJECT - MATLAB R2024a
+
+1. Open GUIDE.html in a browser. GUIDE.md contains the same text.
+2. Read VALIDATION.md for actual checks and limitations of the delivered files.
+3. Set this extracted folder as MATLAB's Current Folder.
+4. Run: test_feature_math
+5. If ann_transmission_line.slx is included, open it; otherwise run:
+       build_power_model(project_config)
+6. Run: smoke_test
+7. Follow the guide stage by stage, or run: run_project
+
+The first dataset is a PILOT, not evidence of field-ready protection.
+The guide identifies values missing from the source PDF and proposed here.
+Training and testing use separate complete simulation scenarios.
+An ABC/ABCG ground-label distinction may be unobservable in balanced cases.
+
+The model builder protects existing SLX files from accidental overwrite.
+The scenario runner saves raw cases and can resume an identical experiment.
+No external dataset is needed: Simulink generates the training waveforms.
